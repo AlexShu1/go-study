@@ -55,7 +55,10 @@ func main() {
 	//interfacetest.Div(10, 0)
 
 	// string 相关的方法测试
-	interfacetest.TestStringSFunc()
+	//interfacetest.TestStringSFunc()
+
+	// time 相关的方法测试
+	interfacetest.TimeTest()
 }
 
 func errorTest() error {
