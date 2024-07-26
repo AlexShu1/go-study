@@ -1,4 +1,4 @@
-package alex
+package interface_test
 
 import "fmt"
 

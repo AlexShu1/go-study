@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	interfacetest "go-study/com/alex"
+)
 
 /*
 *
@@ -29,10 +32,21 @@ func main() {
 	//funcTest()
 
 	// struct 对象
-	structTest()
+	//structTest()
 
 	// 指针
 	//pointerTest()
+
+	// interface 和  struct
+	interfaceTest()
+}
+
+func interfaceTest() {
+	cm := interfacetest.Computer{"戴尔笔记本电脑", "F1234"}
+	interfacetest.Working(&cm)
+
+	apple := interfacetest.Phone{"Apple手机 "}
+	interfacetest.Working(&apple)
 }
 
 func pointerTest() {
