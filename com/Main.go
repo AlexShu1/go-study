@@ -51,7 +51,11 @@ func main() {
 	//	fmt.Println(err)
 	//}
 
-	interfacetest.Div(10, 0)
+	// panic中断测试
+	//interfacetest.Div(10, 0)
+
+	// string 相关的方法测试
+	interfacetest.TestStringSFunc()
 }
 
 func errorTest() error {
