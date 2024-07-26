@@ -21,6 +21,10 @@ import (
 	数组： func t(p [3] int)
 	slice: func t(p [] int)
 	区别：slice不指定数组大小
+
+在Go语言中通过首字母大小写来控制变量、函数、方法、类型的公私有
+如果首字母小写, 那么代表私有, 仅在当前包中可以使用
+如果首字母大写, 那么代表共有, 其它包中也可以使用
 */
 type Person struct {
 	name string
