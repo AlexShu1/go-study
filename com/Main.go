@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	interfacetest "go-study/com/alex"
 )
@@ -42,7 +43,22 @@ func main() {
 	//pointerTest()
 
 	// interface 和  struct
-	interfaceTest()
+	//interfaceTest()
+
+	// 测试error是否会中断程序: error并不会中断程序的正常运行
+	//err := errorTest()
+	//if err != nil {
+	//	fmt.Println(err)
+	//}
+
+	interfacetest.Div(10, 0)
+}
+
+func errorTest() error {
+	fmt.Println("error...")
+	err := errors.New("this is an error")
+	fmt.Println("error after")
+	return err
 }
 
 func interfaceTest() {
