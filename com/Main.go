@@ -1,5 +1,13 @@
 package main
 
+/*
+#include <stdio.h>
+void say(){
+	printf("Hello World\n");
+}
+*/
+import "C"
+
 import (
 	"errors"
 	"fmt"
@@ -58,7 +66,10 @@ func main() {
 	//interfacetest.TestStringSFunc()
 
 	// time 相关的方法测试
-	interfacetest.TimeTest()
+	//interfacetest.TimeTest()
+
+	// C语言调用方法测试
+	interfacetest.CLanguageCall()
 }
 
 func errorTest() error {
